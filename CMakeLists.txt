@@ -32,7 +32,7 @@ add_library(StringCalculator
 
 # Unit test target
 add_executable(test-monitor
-    test_StringCalculator.cpp
+    tests/test_StringCalculator.cpp
 )
 
 # Link test executable with GoogleTest + StringCalculator
@@ -48,3 +48,4 @@ target_link_libraries(
 # -------------------------------
 include(GoogleTest)
 gtest_discover_tests(test-monitor)
+
